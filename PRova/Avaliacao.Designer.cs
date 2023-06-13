@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            bt_avaliar = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -43,16 +43,16 @@
             lb_resultado = new Label();
             SuspendLayout();
             // 
-            // button1
+            // bt_avaliar
             // 
-            button1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(231, 271);
-            button1.Name = "button1";
-            button1.Size = new Size(203, 78);
-            button1.TabIndex = 0;
-            button1.Text = "Avaliar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            bt_avaliar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            bt_avaliar.Location = new Point(231, 271);
+            bt_avaliar.Name = "bt_avaliar";
+            bt_avaliar.Size = new Size(203, 78);
+            bt_avaliar.TabIndex = 0;
+            bt_avaliar.Text = "Avaliar";
+            bt_avaliar.UseVisualStyleBackColor = true;
+            bt_avaliar.Click += button1_Click;
             // 
             // textBox1
             // 
@@ -171,7 +171,7 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(button1);
+            Controls.Add(bt_avaliar);
             Name = "Avaliacao";
             Text = "Avaliacao";
             ResumeLayout(false);
@@ -180,7 +180,7 @@
 
         #endregion
 
-        private Button button1;
+        private Button bt_avaliar;
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;

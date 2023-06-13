@@ -20,10 +20,10 @@ namespace PRova
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string texto = "Você acertou: ";
             string soma = "";
 
             string[] array = new string[10];
-
 
             array[0] = "A";
             array[1] = "B";
@@ -36,15 +36,21 @@ namespace PRova
             array[8] = "E";
             array[9] = "B";
 
-
-
             for (int i = 0; i < array.Length; i++)
             {
                 soma += array[i];
             }
 
+            if (textBox1.Text == array[0])
+            {
+                MessageBox.Show("Está Correto");
+            }
+            else
+            {
+                MessageBox.Show("Está Incorreto");
+            }
 
-            if (textBox2.Text == soma)
+            if (textBox2.Text == array[1])
             {
                 MessageBox.Show("Está Correto");
             }
@@ -52,7 +58,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox3.Text == soma)
+            if (textBox3.Text == array[2])
             {
                 MessageBox.Show("Está Correto");
             }
@@ -60,7 +66,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox4.Text == soma)
+            if (textBox4.Text == array[3])
             {
                 MessageBox.Show("Está Correto");
             }
@@ -68,7 +74,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox5.Text == soma)
+            if (textBox5.Text == array[4])
             {
                 MessageBox.Show("Está Correto");
             }
@@ -76,7 +82,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox6.Text == soma)
+            if (textBox6.Text == array[5])
             {
                 MessageBox.Show("Está Correto");
             }
@@ -84,7 +90,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox7.Text == soma)
+            if (textBox7.Text == array[6])
             {
                 MessageBox.Show("Está Correto");
             }
@@ -92,7 +98,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox8.Text == soma)
+            if (textBox8.Text == array[7])
             {
                 MessageBox.Show("Está Correto");
             }
@@ -100,7 +106,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox9.Text == soma)
+            if (textBox9.Text == array[8])
             {
                 MessageBox.Show("Está Correto");
             }
@@ -108,7 +114,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox10.Text == soma)
+            if (textBox10.Text == array[9])
             {
                 MessageBox.Show("Está Correto");
             }
@@ -117,6 +123,7 @@ namespace PRova
                 MessageBox.Show("Está Incorreto");
             }
             lb_resultado.Text = soma.ToString();
+            bt_avaliar.Text = soma.Length.ToString();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
