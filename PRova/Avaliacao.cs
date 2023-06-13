@@ -19,7 +19,8 @@ namespace PRova
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            string soma = "";
+
             string[] array = new string[10];
 
             array[0] = "A";
@@ -35,51 +36,16 @@ namespace PRova
 
             for (int i = 0; i < array.Length; i++)
             {
-               
+                soma += array[i];
             }
-            string armazenar = array[0];
-            string armazenar1 = array[1];
-            string armazenar2 = array[2];
-            string armazenar3 = array[3];
-            string armazenar4 = array[4];
-            string armazenar5 = array[5];
-            string armazenar6 = array[6];
-            string armazenar7 = array[7];
-            string armazenar8 = array[8];
-            string armazenar9 = array[9];
 
-            if (textBox1.Text == armazenar)
+            if (textBox1.Text == array[0])
             {
                 MessageBox.Show("Está Correto");
             }
-            else 
+            else
             {
-                MessageBox.Show("Está Errado");
-            }
-           
-            if (textBox1.Text == armazenar1)
-            {
-                MessageBox.Show("Está Correto");
-            }
-            else if (textBox1.Text != armazenar1)
-            {
-                MessageBox.Show("Está Errado");
-            }
-            if (textBox1.Text == armazenar2)
-            {
-                MessageBox.Show("Está Correto");
-            }
-            else if (textBox1.Text != armazenar2)
-            {
-                MessageBox.Show("Está Errado");
-            }
-            if (textBox1.Text == armazenar)
-            {
-                MessageBox.Show("Está Correto");
-            }
-            else if (textBox1.Text != armazenar)
-            {
-                MessageBox.Show("Está Errado");
+                MessageBox.Show("Está Incorreto");
             }
 
 
@@ -91,7 +57,7 @@ namespace PRova
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
-            
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
