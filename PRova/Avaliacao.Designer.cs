@@ -40,6 +40,7 @@
             textBox9 = new TextBox();
             textBox10 = new TextBox();
             label2 = new Label();
+            lb_resultado = new Label();
             SuspendLayout();
             // 
             // button1
@@ -142,11 +143,23 @@
             label2.TabIndex = 2;
             label2.Text = "Insira suas Respostas:";
             // 
+            // lb_resultado
+            // 
+            lb_resultado.AutoSize = true;
+            lb_resultado.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_resultado.Location = new Point(411, 147);
+            lb_resultado.Name = "lb_resultado";
+            lb_resultado.Size = new Size(83, 32);
+            lb_resultado.TabIndex = 3;
+            lb_resultado.Text = "label1";
+            lb_resultado.Click += lb_resultado_Click;
+            // 
             // Avaliacao
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lb_resultado);
             Controls.Add(label2);
             Controls.Add(textBox10);
             Controls.Add(textBox9);
@@ -179,5 +192,6 @@
         private TextBox textBox9;
         private TextBox textBox10;
         private Label label2;
+        private Label lb_resultado;
     }
 }

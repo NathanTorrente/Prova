@@ -15,13 +15,15 @@ namespace PRova
         public Avaliacao()
         {
             InitializeComponent();
+            lb_resultado.Text = "";
         }
-        string soma = "";
+
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            string soma = "";
 
             string[] array = new string[10];
+
 
             array[0] = "A";
             array[1] = "B";
@@ -34,19 +36,14 @@ namespace PRova
             array[8] = "E";
             array[9] = "B";
 
+
+
             for (int i = 0; i < array.Length; i++)
             {
                 soma += array[i];
             }
 
-            if (textBox1.Text == soma)
-            {
-                MessageBox.Show("Está Correto");
-            }
-            else
-            {
-                MessageBox.Show("Está Incorreto");
-            }
+
             if (textBox2.Text == soma)
             {
                 MessageBox.Show("Está Correto");
@@ -119,7 +116,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-
+            lb_resultado.Text = soma.ToString();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -170,14 +167,12 @@ namespace PRova
 
         private void textBox10_TextChanged(object sender, EventArgs e)
         {
-            if (textBox10.Text == soma)
-            {
-                MessageBox.Show("Está Correto");
-            }
-            else
-            {
-                MessageBox.Show("Está Incorreto");
-            }
+
+        }
+
+        private void lb_resultado_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
