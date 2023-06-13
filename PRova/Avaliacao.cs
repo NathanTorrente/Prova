@@ -16,10 +16,10 @@ namespace PRova
         {
             InitializeComponent();
         }
-
+        string soma = "";
         private void button1_Click(object sender, EventArgs e)
         {
-            string soma = "";
+            
 
             string[] array = new string[10];
 
@@ -39,7 +39,7 @@ namespace PRova
                 soma += array[i];
             }
 
-            if (textBox1.Text == array[0])
+            if (textBox1.Text == soma)
             {
                 MessageBox.Show("Está Correto");
             }
@@ -47,10 +47,78 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-
-
-
-
+            if (textBox2.Text == soma)
+            {
+                MessageBox.Show("Está Correto");
+            }
+            else
+            {
+                MessageBox.Show("Está Incorreto");
+            }
+            if (textBox3.Text == soma)
+            {
+                MessageBox.Show("Está Correto");
+            }
+            else
+            {
+                MessageBox.Show("Está Incorreto");
+            }
+            if (textBox4.Text == soma)
+            {
+                MessageBox.Show("Está Correto");
+            }
+            else
+            {
+                MessageBox.Show("Está Incorreto");
+            }
+            if (textBox5.Text == soma)
+            {
+                MessageBox.Show("Está Correto");
+            }
+            else
+            {
+                MessageBox.Show("Está Incorreto");
+            }
+            if (textBox6.Text == soma)
+            {
+                MessageBox.Show("Está Correto");
+            }
+            else
+            {
+                MessageBox.Show("Está Incorreto");
+            }
+            if (textBox7.Text == soma)
+            {
+                MessageBox.Show("Está Correto");
+            }
+            else
+            {
+                MessageBox.Show("Está Incorreto");
+            }
+            if (textBox8.Text == soma)
+            {
+                MessageBox.Show("Está Correto");
+            }
+            else
+            {
+                MessageBox.Show("Está Incorreto");
+            }
+            if (textBox9.Text == soma)
+            {
+                MessageBox.Show("Está Correto");
+            }
+            else
+            {
+                MessageBox.Show("Está Incorreto");
+            }
+            if (textBox10.Text == soma)
+            {
+                MessageBox.Show("Está Correto");
+            }
+            else
+            {
+                MessageBox.Show("Está Incorreto");
+            }
 
         }
 
@@ -102,7 +170,14 @@ namespace PRova
 
         private void textBox10_TextChanged(object sender, EventArgs e)
         {
-
+            if (textBox10.Text == soma)
+            {
+                MessageBox.Show("Está Correto");
+            }
+            else
+            {
+                MessageBox.Show("Está Incorreto");
+            }
         }
     }
 }
