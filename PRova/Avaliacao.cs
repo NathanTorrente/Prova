@@ -20,6 +20,7 @@ namespace PRova
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int contador = 0;
             string texto = "Você acertou: ";
             string soma = "";
 
@@ -36,14 +37,14 @@ namespace PRova
             array[8] = "E";
             array[9] = "B";
 
-            for (int i = 0; i < array.Length; i++)
-            {
-                soma += array[i];
-            }
+            
 
             if (textBox1.Text == array[0])
             {
+                
+             
                 MessageBox.Show("Está Correto");
+                contador++;
             }
             else
             {
@@ -53,6 +54,7 @@ namespace PRova
             if (textBox2.Text == array[1])
             {
                 MessageBox.Show("Está Correto");
+                contador++;
             }
             else
             {
@@ -61,6 +63,7 @@ namespace PRova
             if (textBox3.Text == array[2])
             {
                 MessageBox.Show("Está Correto");
+                contador++;
             }
             else
             {
@@ -69,6 +72,7 @@ namespace PRova
             if (textBox4.Text == array[3])
             {
                 MessageBox.Show("Está Correto");
+                contador++;
             }
             else
             {
@@ -77,6 +81,7 @@ namespace PRova
             if (textBox5.Text == array[4])
             {
                 MessageBox.Show("Está Correto");
+                contador++;
             }
             else
             {
@@ -85,6 +90,7 @@ namespace PRova
             if (textBox6.Text == array[5])
             {
                 MessageBox.Show("Está Correto");
+                contador++;
             }
             else
             {
@@ -93,6 +99,7 @@ namespace PRova
             if (textBox7.Text == array[6])
             {
                 MessageBox.Show("Está Correto");
+                contador++;
             }
             else
             {
@@ -101,6 +108,7 @@ namespace PRova
             if (textBox8.Text == array[7])
             {
                 MessageBox.Show("Está Correto");
+                contador++;
             }
             else
             {
@@ -109,21 +117,26 @@ namespace PRova
             if (textBox9.Text == array[8])
             {
                 MessageBox.Show("Está Correto");
+                contador++;
             }
             else
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox10.Text == array[9])
+            if (textBox10.Text.ToUpper() == array[9])
             {
                 MessageBox.Show("Está Correto");
+                contador++;
             }
             else
             {
                 MessageBox.Show("Está Incorreto");
             }
-            lb_resultado.Text = soma.ToString();
-            bt_avaliar.Text = soma.Length.ToString();
+
+            
+            lb_resultado.Text = contador.ToString();
+          
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
