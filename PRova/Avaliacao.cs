@@ -119,7 +119,15 @@ namespace PRova
                 MessageBox.Show("Está Incorreto");
             }
 
-            
+            texto += contador;
+            if (contador == 10)
+            {
+                MessageBox.Show("Parabéns gabaritou a prova!", "Continue assim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+            }
+            lb_resultado.Text = texto.ToString();
+
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
