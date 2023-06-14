@@ -27,7 +27,7 @@ namespace PRova
             string[] array = new string[] { "A", "B" , "D", "E", "C", "A", "A", "D", "E", "B" }; // Troquei o tipo de array Lab 1
 
 
-            if (textBox1.Text == array[0])
+            if (textBox1.Text.ToUpper() == array[0])
             {             
                 MessageBox.Show("Está Correto");
                 contador++; 
@@ -37,7 +37,7 @@ namespace PRova
                 MessageBox.Show("Está Incorreto");
             }
 
-            if (textBox2.Text == array[1])
+            if (textBox2.Text.ToUpper() == array[1])
             {
                 MessageBox.Show("Está Correto");
                 contador++;
@@ -46,7 +46,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox3.Text == array[2])
+            if (textBox3.Text.ToUpper() == array[2])
             {
                 MessageBox.Show("Está Correto");
                 contador++;
@@ -55,7 +55,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox4.Text == array[3])
+            if (textBox4.Text.ToUpper() == array[3])
             {
                 MessageBox.Show("Está Correto");
                 contador++;
@@ -64,7 +64,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox5.Text == array[4])
+            if (textBox5.Text.ToUpper() == array[4])
             {
                 MessageBox.Show("Está Correto");
                 contador++;
@@ -73,7 +73,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox6.Text == array[5])
+            if (textBox6.Text.ToUpper() == array[5])
             {
                 MessageBox.Show("Está Correto");
                 contador++;
@@ -82,7 +82,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox7.Text == array[6])
+            if (textBox7.Text.ToUpper() == array[6])
             {
                 MessageBox.Show("Está Correto");
                 contador++;
@@ -91,7 +91,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox8.Text == array[7])
+            if (textBox8.Text.ToUpper() == array[7])
             {
                 MessageBox.Show("Está Correto");
                 contador++;
@@ -100,7 +100,7 @@ namespace PRova
             {
                 MessageBox.Show("Está Incorreto");
             }
-            if (textBox9.Text == array[8])
+            if (textBox9.Text.ToUpper() == array[8])
             {
                 MessageBox.Show("Está Correto");
                 contador++;
@@ -119,9 +119,7 @@ namespace PRova
                 MessageBox.Show("Está Incorreto");
             }
 
-            texto += contador;
-       
-            lb_resultado.Text = texto.ToString();
+            
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
